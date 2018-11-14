@@ -1,4 +1,4 @@
-# WireWrap ![WireWrap Logo](wirewrap.svg)
+# ![WireWrap Logo](wirewrap.svg) WireWrap 
 ## A simple two-way json binding engine
 
 This project aims to provide a simple two json binding engine that:
