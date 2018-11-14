@@ -1,5 +1,5 @@
 Inline-style:
-![alt text](https://github.com/eeegs/wrapwire/wirewrap.svg "WireWrap Logo")
+![alt text](https://github.com/eeegs/WrapWire/blob/master/wirewrap.svg "WireWrap Logo")
 
 # WireWrap
 ## A simple two-way json binding engine
