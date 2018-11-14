@@ -1,7 +1,4 @@
-Inline-style:
-![alt text](https://github.com/eeegs/WrapWire/blob/master/wirewrap.svg "WireWrap Logo")
-
-# WireWrap
+# WireWrap ![WireWrap Logo](wirewrap.svg)
 ## A simple two-way json binding engine
 
 This project aims to provide a simple two json binding engine that:
