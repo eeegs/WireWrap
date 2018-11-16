@@ -1,4 +1,4 @@
-﻿
+
 var Wire = (function (undefined) {
 	'use strict'
 
@@ -34,14 +34,16 @@ var Wire = (function (undefined) {
 	};
 
 	Listener.prototype.onChange = function (e) {
+		// use current target to get the actual control or the container for radio btns
 		var key = e.currentTarget.attributes["data-wwHash"].value;
 		if (key) {
 			var me = Listeners.get(key);
 			if (me) {
-				me.setValue(e.target.value);
-				var subscribers = me.parent.mappings.get(me.objectPath);
+				me.setValue(e.target.value);	// use the target to get the vaule of actual changing thing
+				var subscribers = me.parent.mappings.get(me.objectPath);	//get other maps with the same binding path
 				subscribers.forEach(function (item) {
 					if (item !== me) {
+						// only change other items don't rechange me
 						item.updateUI();
 					}
 				});
@@ -211,4 +213,4 @@ var Wire = (function (undefined) {
 		Wrap: bindTop,
 		Unwrap
 	};
-}());
+})();
