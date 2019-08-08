@@ -7,3 +7,4 @@ This project aims to provide a simple two way json binding engine that:
 - use the actual HTML as templates
 - is small
 - doesn't use jQuery
+
